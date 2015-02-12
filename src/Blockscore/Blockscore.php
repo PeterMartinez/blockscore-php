@@ -31,7 +31,7 @@
 */
 namespace Blockscore;
 
-class blockscore
+class Blockscore
 {
 const base_url = 'https://api.blockscore.com/';
 const api_version = '4';

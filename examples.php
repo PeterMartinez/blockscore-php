@@ -2,7 +2,7 @@
 //Non-Composer Auto-load Example
 require_once('src/Blockscore/blockscore.class.php');
 
-$blockscore = new blockscore('sk_test_n5049aa6053c9a0217bea78070fbf501');
+$blockscore = new Blockscore('sk_test_n5049aa6053c9a0217bea78070fbf501');
 
 // International Verification (new in API v4: both US & Int'l use the same function)
 $name['first'] = 'John';
