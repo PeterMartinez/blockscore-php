@@ -1,0 +1,16 @@
+{
+    "name": "petermartinez/blockscore-php",
+    "description": "Blockscore.com PHP SDK, Forked from https://github.com/BlockScore/blockscore-php",
+    "autoload": {
+        "psr-0": {
+            "Blockscore\\": "src/",
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Martinez",
+            "email": "emailme@PeterMartinez.com"
+        }
+    ]
+}

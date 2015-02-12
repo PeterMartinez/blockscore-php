@@ -29,6 +29,8 @@
 * @version 1.0.4
 *
 */
+namespace Blockscore;
+
 class blockscore
 {
 const base_url = 'https://api.blockscore.com/';
@@ -67,7 +69,7 @@ public function __construct($key="")
 * @throws Exception if request fails (see private function request() for details)
 * @return Array
 */
-public function Blockscore_Verification($name, $dob, $identification, $idtype, $address, $telephone = "", $ip = "", $note = "") {
+public function Verification($name, $dob, $identification, $idtype, $address, $telephone = "", $ip = "", $note = "") {
 	list($dobY, $dobM, $dobD) = explode("-", $dob);
 	$postVars = array("name_first"=>$name['first'], "name_middle"=>$name['middle'], "name_last"=>$name['last'],	
 		"birth_day" => $dobD, "birth_month" => $dobM, "birth_year" => $dobY, 

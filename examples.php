@@ -1,5 +1,6 @@
 <?php
-require_once('blockscore.class.php');
+//Non-Composer Auto-load Example
+require_once('src/Blockscore/blockscore.class.php');
 
 $blockscore = new blockscore('sk_test_n5049aa6053c9a0217bea78070fbf501');
 
@@ -22,7 +23,7 @@ $ip = 'FE80:0000:0000:0000:0202:B3FF:FE1E:8329';  //or $ip = '127.0.0.1';
 $note = 'Test user at ' . date("Y-m-d H:i:s") . ' on ' . gethostname();
 
 try {
-    $VerifyIntlResult = $blockscore->Blockscore_Verification($name, $dob, $documentNum, $documentType, $address, $telephone, $ip, $note);
+    $VerifyIntlResult = $blockscore->Verification($name, $dob, $documentNum, $documentType, $address, $telephone, $ip, $note);
 } catch (Exception $e) {
     die( 'Caught exception: ' .  $e->getMessage() . "\n" );
 }
@@ -51,7 +52,7 @@ $ip = 'FE80:0000:0000:0000:0202:B3FF:FE1E:8329';  //or $ip = '127.0.0.1';
 $note = 'Test user at ' . date("Y-m-d H:i:s") . ' on ' . gethostname();
 
 try {
-    $VerifyUSResult = $blockscore->Blockscore_Verification($name, $dob, $documentNum, $documentType, $address, $telephone, $ip, $note);
+    $VerifyUSResult = $blockscore->Verification($name, $dob, $documentNum, $documentType, $address, $telephone, $ip, $note);
 } catch (Exception $e) {
     die( 'Caught exception: ' .  $e->getMessage() . "\n" );
 }
